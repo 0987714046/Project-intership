@@ -1,0 +1,80 @@
+.container {
+    margin: 0 0;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.content {
+    top: 0;
+    background-image: url(/assets/images/background.png);
+    background-size: 100% 100%;
+    height: 500px auto;
+    width: 100%;
+    align-items: center;
+}
+
+.content .text>div.hidden {
+    display: none;
+}
+
+.header {
+    align-items: center;
+    text-align: center;
+}
+
+.header .text {
+    color: white;
+    margin: 15% 20%;
+}
+
+.bookfirm {
+    background-color: rgb(68, 68, 68);
+}
+
+.row_poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_posterLarge {
+    max-height: 250px;
+    max-width: 165px
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.row {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.row h2:hover {
+    cursor: default;
+}
+
+.name {
+    color: white;
+}

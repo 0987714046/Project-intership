@@ -4,12 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="" width=", initial-scale=1.0">
+    <title>Netflix-Fake</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <script></script>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div class="text">
+
+                    <h1>Chào mừng bạn đến với Netflix</h1>
+                    <p>Chúc bạn có những phút giây giải trí vui vẻ</p>
+                    <input id="search" type="search" placeholder="Search....">
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="bookfirm">
+            <div class="row">
+                <h2>Phim Hay</h2>
+                <div class="col row_posters row_postersSmall"></div>
+
+
+            </div>
+
+
+            <div class="row">
+                <h2>Phim Việt</h2>
+                <div class="col row_posters row_postersSmall">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="loaddata">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            const div = document.getElementsByName("div");
+
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY >= 10) {
+                    return
+                }
+
+
+
+            });
+        </script>
+        <script src="/assets/js/ajax.js"></script>
+
 </body>
 
 </html>
